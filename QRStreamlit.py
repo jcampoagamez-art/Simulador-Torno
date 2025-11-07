@@ -77,12 +77,7 @@ if st.button("Calcular"):
         # descarga a Excel
         df_out = pd.DataFrame([res])
         towrite = io.BytesIO()
-        df_out.to_excel(towrite, index=False, engine='openpyxl')
-        towrite.seek(0)
-        st.download_button("Descargar resultados (.xlsx)", towrite,
-                           file_name="Hoja_Ruta_resultados.xlsx",
-
-                           mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+       
         st.markdown(
     """
     ---
@@ -91,5 +86,6 @@ if st.button("Calcular"):
     Próximamente trabajaremos para agregar más procesos de mecanizado. 🙂
     """
 )
+
 
 
