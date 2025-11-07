@@ -81,4 +81,13 @@ if st.button("Calcular"):
         towrite.seek(0)
         st.download_button("Descargar resultados (.xlsx)", towrite,
                            file_name="Hoja_Ruta_resultados.xlsx",
+
                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        st.markdown(
+    """
+    ---
+    **🛠️ Nota:**  
+    Este proyecto está delimitado únicamente para procesos en el torno, con los tipos de materiales propuestos en la ventana de arriba.  
+    Próximamente trabajaremos para agregar más procesos de mecanizado. 🙂
+    """
+)
