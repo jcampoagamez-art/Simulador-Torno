@@ -3,6 +3,7 @@ import pandas as pd
 import math
 import io
 import datetime
+import openpyxl
 
 st.set_page_config(page_title="Simulador Torno", layout="centered")
 
@@ -91,3 +92,4 @@ if st.button("Calcular"):
     Próximamente trabajaremos para agregar más procesos de mecanizado. 🙂
     """
 )
+
